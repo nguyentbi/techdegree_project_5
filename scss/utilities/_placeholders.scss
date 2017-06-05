@@ -1,0 +1,12 @@
+
+
+%a {
+  color: $black;
+  font-weight: bold;
+}
+
+%bottom-nav {
+  @include text(.9em, bold);
+  display: flex;
+  align-items: center;
+}

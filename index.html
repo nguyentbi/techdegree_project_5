@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Website</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="layout-constrained">
+      <header id="home">
+          <nav class='main-nav layout-nav'>
+            <h1 class="main-nav__logo"><a href="index.html" id="name">Bi Nguyen</a></h1>
+            <ul class="main-nav__menu">
+              <li><a class="menu__tab" href="#home">HOME</a></li>
+              <li><a class="menu__tab" href="#portfolio">PORTFOLIO</a></li>
+              <li><a class="menu__tab" href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+      </header>
+      <div class="about layout-about">
+        <img class="about__profile-image" src="img/responsive-layout-profile.png" alt="cartoon profile image">
+        <p class="about__description">Hi, I'm a front-end developer who love responsive design and css.
+         I recently finished a degree in front-end development a Treehouse
+         and am excited to put my skill to use!</p>
+      </div>
+      <section class="portfolio layout-portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTFOLIO</h2>
+        <ul>
+          <li class="list-item">
+            <img src="img/portfolio-1.png" alt="picture of a marketing website ">
+            <h3>Marketing Page</h3>
+            <p>This project shows the front page of a marketing website
+               meant for a specific business I'm interested in.</p>
+          </li>
+          <li class="list-item">
+            <img src="img/portfolio-2.png" alt="picture of a search web browser">
+            <h3>Searching Page</h3>
+            <p>This project seaches throught specific database to find
+               information that the user is trying to look up.</p>
+          </li>
+          <li class="list-item">
+            <img src="img/portfolio-3.png" alt="picture of a travel app">
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different
+               transportation methods and tells you the best one.</p>
+          </li>
+          <li class="list-item">
+            <img src="img/portfolio-4.png" alt="picture of a map with plot point">
+            <h3>Map of Favorite Spots</h3>
+            <p>This project use mappings apisto plot points for my
+               favorite spots in the city for a to-do-yourself walking tour.</p>
+          </li>
+          <li class="list-item">
+            <img src="img/portfolio-5.png" alt="picture of a photo gallery">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to
+              the viewer and allows them to easily navigate through photos.</p>
+          </li>
+          <li class="list-item">
+            <img src="img/portfolio-6.png" alt="picture of a calculator">
+            <h3>Calculator</h3>
+            <p>Someone can enter the numbers they want, and press the big
+               blue button and get the result.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="contact layout-contact" id="contact">
+        <h4 class="contact__title">CONTACT</h4>
+        <p class="contact__description" >If you're interested in chatting or want more information about
+           what I've been working on, I'd love to hear from you!</p>
+        <ul >
+          <li class="contact__information" >Phone <a href="tel:1(111)555-1234"> 1(111)555-1234</a></li>
+          <li class="contact__information" >Email <a href="mailto:email@yoursite.com"> email@yoursite.com</a></li>
+        </ul>
+      </section>
+      <footer>
+        <nav class="bottom-nav">
+          <h4 class="bottom-nav__logo"><a href="index.html">Bi Nguyen</a></h4>
+          <ul class="bottom-nav__menu">
+            <li class='back-to-top'><a href="#top">BACK TO TOP</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

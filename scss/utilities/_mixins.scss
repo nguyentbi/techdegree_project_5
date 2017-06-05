@@ -1,0 +1,31 @@
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mq($break) {
+  @if $break == 'medium' {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == 'large' {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}
+
+@mixin text($font-size: null, $font-weight: null, $color: null) {
+  font-size: $font-size,;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin border-radius($border-radius: 5px) {
+  border-radius: $border-radius;
+}

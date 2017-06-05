@@ -1,0 +1,37 @@
+
+
+.contact {
+  &__title {
+    @include text(1.3em, bold);
+    padding: 0 1em .2em;
+    @include mq(medium) {
+      padding-bottom: .7em;
+    }
+    @include mq(large) {
+      padding-bottom: 1em;
+    }
+  }
+  &__description {
+    @include text(1.1em);
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: .5em;
+    @include mq(medium) {
+      width: 70%;
+    }
+    @include mq(large) {
+      width: 45%;
+      padding-bottom: 1.5em;
+    }
+  }
+  &__information {
+    @include text(1.1em);
+    padding: .3em;
+    @include mq(medium) {
+      padding: .5em;
+    }
+    & a {
+      padding: .8em;
+    }
+  }
+}

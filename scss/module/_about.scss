@@ -1,0 +1,33 @@
+
+
+.about {
+  &__profile-image {
+    @include border-radius;
+    width: 70%;
+    @include mq(medium) {
+      float: right;
+      display: inline-block;
+      width: 50%;
+      padding: 0 .8em;
+    }
+    @include mq(large) {
+      padding: 0;
+      width: 52%;
+    }
+  }
+  &__description {
+    @include text(1.2em);
+    margin-top: 1.5em;
+    @include mq(medium) {
+      float: left;
+      width: 50%;
+      margin-top: 0;
+      text-align: left;
+      padding: 0 .8em;
+    }
+    @include mq(large) {
+      padding: 0;
+      width: 44%;
+    }
+  }
+}

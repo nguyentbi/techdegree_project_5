@@ -1,0 +1,29 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $light-grey;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  @extend %a;
+  text-decoration: none;
+  &:link {
+    @extend %a;
+  }
+  &visited {
+    @extend %a;
+  }
+  &:hover {
+    opacity: .5;
+  }
+}

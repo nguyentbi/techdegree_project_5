@@ -1,0 +1,22 @@
+
+
+
+.bottom-nav {
+  @extend %bottom-nav;
+  justify-content: space-between;
+  &__menu {
+    @extend %bottom-nav;
+    & li:nth-child(n+2) {
+      display: none;
+      @include mq(medium) {
+        display: flex;
+        padding: 1em 0 1em 2em;
+      }
+    }
+    & li:nth-child(1) {
+      @include mq(medium) {
+        display: none;
+      }
+    }
+  }
+}

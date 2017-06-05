@@ -1,0 +1,64 @@
+
+.portfolio {
+  &__title {
+    @include text(1.3em, bold);
+    padding: .5em;
+    @include mq(medium) {
+      padding: 2em 0;
+  }
+}
+
+.list-item {
+    @include mq(medium) {
+      display: inline-block;
+      width: 50%;
+      margin-left: -4px;
+      vertical-align: top;
+    }
+    @include mq(large) {
+      width: 33%;
+    }
+    & img {
+      @include border-radius;
+      width: 90%;
+      @include mq(medium) {
+        width: 95%;
+      }
+    }
+    & h3{
+      @include text(1.3em, bold);
+      margin: 1.2em auto .5em;
+    }
+    & p {
+      @include text(1em);
+      width: 80%;
+      margin: 0 auto 2.8em;
+    }
+    &:nth-child(2n+1) {
+      @include mq(medium) {
+        padding-left: 1.5em;
+      }
+    }
+    &:nth-child(2n+2) {
+      @include mq(medium) {
+        padding-right: 1.5em;
+      }
+    }
+    &:nth-child(3n+1) {
+      @include mq(large) {
+        padding: 0 0 0 1em;
+      }
+    }
+    &:nth-child(3n+2) {
+      @include mq(large) {
+        padding: 0 .5em 0 .5em;
+        margin: 0 -1em;
+      }
+    }
+    &:nth-child(3n+3) {
+      @include mq(large) {
+        padding: 0 1em 0 0;
+      }
+    }
+  }
+}

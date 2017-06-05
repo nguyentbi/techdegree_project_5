@@ -1,0 +1,46 @@
+
+
+
+.main-nav {
+  @include mq(medium) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mq(large) {
+    flex-direction: row;
+    align-items: baseline;
+    margin: 2.5em auto 2em;
+  }
+  &__logo {
+    @include mq(medium) {
+      margin: 1.5em auto -.2em;
+    }
+    @include mq(large) {
+      margin: 0 auto 0 0;
+    }
+  }
+  &__menu {
+    margin-bottom: 2.5em;
+    @include mq(medium) {
+      display: flex;
+    }
+  }
+}
+
+
+.menu__tab {
+  display: block;
+  padding: .5em;
+  margin: .3em auto;
+  background-color: $white;
+  border-radius: 5px;
+  @include mq(medium) {
+    padding: 1em .5em;
+    margin: 0 .8em;
+    background-color: $light-grey;
+  }
+  @include mq(large) {
+    padding-bottom: 0;
+  }
+}

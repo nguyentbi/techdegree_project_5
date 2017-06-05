@@ -1,0 +1,225 @@
+a, a:link, avisited {
+  color: #000;
+  font-weight: bold; }
+
+.bottom-nav, .bottom-nav__menu {
+  font-size: 0.9em;
+  font-weight: bold;
+  display: flex;
+  align-items: center; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  background-color: #ddd; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    opacity: .5; }
+
+.layout-constrained {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center; }
+
+.layout-nav {
+  margin: .5em; }
+
+.layout-about {
+  padding-bottom: 1.5em; }
+  .layout-about:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 768px) {
+    .layout-about {
+      padding-bottom: 4em; } }
+
+.layout-portfolio {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: .8em 0;
+  margin: 0 -5.5%; }
+  @media (min-width: 768px) {
+    .layout-portfolio {
+      padding-bottom: 0; } }
+  @media (min-width: 1024px) {
+    .layout-portfolio {
+      margin: 0; } }
+
+.layout-contact {
+  padding-top: 2em; }
+
+footer {
+  border-top: 1px solid #000;
+  margin: 4em auto 0; }
+  @media (min-width: 768px) {
+    footer {
+      margin: 3.5em auto; } }
+  @media (min-width: 1024px) {
+    footer {
+      margin: 4em auto 0; } }
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media (min-width: 1024px) {
+  .main-nav {
+    flex-direction: row;
+    align-items: baseline;
+    margin: 2.5em auto 2em; } }
+@media (min-width: 768px) {
+  .main-nav__logo {
+    margin: 1.5em auto -.2em; } }
+@media (min-width: 1024px) {
+  .main-nav__logo {
+    margin: 0 auto 0 0; } }
+.main-nav__menu {
+  margin-bottom: 2.5em; }
+  @media (min-width: 768px) {
+    .main-nav__menu {
+      display: flex; } }
+
+.menu__tab {
+  display: block;
+  padding: .5em;
+  margin: .3em auto;
+  background-color: #fff;
+  border-radius: 5px; }
+  @media (min-width: 768px) {
+    .menu__tab {
+      padding: 1em .5em;
+      margin: 0 .8em;
+      background-color: #ddd; } }
+  @media (min-width: 1024px) {
+    .menu__tab {
+      padding-bottom: 0; } }
+
+.about__profile-image {
+  border-radius: 5px;
+  width: 70%; }
+  @media (min-width: 768px) {
+    .about__profile-image {
+      float: right;
+      display: inline-block;
+      width: 50%;
+      padding: 0 .8em; } }
+  @media (min-width: 1024px) {
+    .about__profile-image {
+      padding: 0;
+      width: 52%; } }
+.about__description {
+  font-size: 1.2em;
+  margin-top: 1.5em; }
+  @media (min-width: 768px) {
+    .about__description {
+      float: left;
+      width: 50%;
+      margin-top: 0;
+      text-align: left;
+      padding: 0 .8em; } }
+  @media (min-width: 1024px) {
+    .about__description {
+      padding: 0;
+      width: 44%; } }
+
+.portfolio__title {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: .5em; }
+  @media (min-width: 768px) {
+    .portfolio__title {
+      padding: 2em 0; } }
+@media (min-width: 768px) {
+  .portfolio .list-item {
+    display: inline-block;
+    width: 50%;
+    margin-left: -4px;
+    vertical-align: top; } }
+@media (min-width: 1024px) {
+  .portfolio .list-item {
+    width: 33%; } }
+.portfolio .list-item img {
+  border-radius: 5px;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .portfolio .list-item img {
+      width: 95%; } }
+.portfolio .list-item h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 1.2em auto .5em; }
+.portfolio .list-item p {
+  font-size: 1em;
+  width: 80%;
+  margin: 0 auto 2.8em; }
+@media (min-width: 768px) {
+  .portfolio .list-item:nth-child(2n+1) {
+    padding-left: 1.5em; } }
+@media (min-width: 768px) {
+  .portfolio .list-item:nth-child(2n+2) {
+    padding-right: 1.5em; } }
+@media (min-width: 1024px) {
+  .portfolio .list-item:nth-child(3n+1) {
+    padding: 0 0 0 1em; } }
+@media (min-width: 1024px) {
+  .portfolio .list-item:nth-child(3n+2) {
+    padding: 0 .5em 0 .5em;
+    margin: 0 -1em; } }
+@media (min-width: 1024px) {
+  .portfolio .list-item:nth-child(3n+3) {
+    padding: 0 1em 0 0; } }
+
+.contact__title {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0 1em .2em; }
+  @media (min-width: 768px) {
+    .contact__title {
+      padding-bottom: .7em; } }
+  @media (min-width: 1024px) {
+    .contact__title {
+      padding-bottom: 1em; } }
+.contact__description {
+  font-size: 1.1em;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: .5em; }
+  @media (min-width: 768px) {
+    .contact__description {
+      width: 70%; } }
+  @media (min-width: 1024px) {
+    .contact__description {
+      width: 45%;
+      padding-bottom: 1.5em; } }
+.contact__information {
+  font-size: 1.1em;
+  padding: .3em; }
+  @media (min-width: 768px) {
+    .contact__information {
+      padding: .5em; } }
+  .contact__information a {
+    padding: .8em; }
+
+.bottom-nav {
+  justify-content: space-between; }
+  .bottom-nav__menu li:nth-child(n+2) {
+    display: none; }
+    @media (min-width: 768px) {
+      .bottom-nav__menu li:nth-child(n+2) {
+        display: flex;
+        padding: 1em 0 1em 2em; } }
+  @media (min-width: 768px) {
+    .bottom-nav__menu li:nth-child(1) {
+      display: none; } }
+
+/*# sourceMappingURL=application.css.map */
